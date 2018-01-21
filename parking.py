@@ -1,4 +1,5 @@
 import urllib2, json, time, datetime
+from tqdm import tqdm
 
 outfile = open("outfile.txt", "a")
 
@@ -19,4 +20,7 @@ while True:
 
     outfile.write("\n")
     outfile.flush()
-    time.sleep(60)
+    
+    for i in tqdm(range(60)):
+        time.sleep(1)
+
