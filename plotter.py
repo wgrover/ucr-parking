@@ -5,7 +5,7 @@ from dateutil import tz
 import matplotlib.dates as mdates
 
 
-data = numpy.genfromtxt("outfile.txt", usecols=(2, 3, 4, 5, 6, 7), delimiter=" ",
+data = numpy.genfromtxt("outfile.txt", usecols=(2, 3, 5, 6, 7), delimiter=" ",
                         missing_values = "FULL", filling_values = 0,
                         autostrip = True)
 dates = numpy.loadtxt("outfile.txt", usecols=[0,], dtype="S")
