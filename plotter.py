@@ -4,7 +4,7 @@ import numpy, datetime, matplotlib.pyplot as plt
 from dateutil import tz
 import matplotlib.dates as mdates
 
-
+plt.figure(figsize = (20, 10))
 data = numpy.genfromtxt("outfile.txt", usecols=(2, 3, 5, 6, 7), delimiter=" ",
                         missing_values = "FULL", filling_values = 0,
                         autostrip = True)
